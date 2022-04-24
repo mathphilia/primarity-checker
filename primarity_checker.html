@@ -53,23 +53,26 @@ function isPrime(n){
 }
 function primalityCheck(event){
     if(number.value==''){
-        result.innerText="整数を入力してください";
-        result.style.color="red";
+        result.innerHTML='整数を入力してください';
+        result.style.color='red';
         return;
     }
     try{
         ipt=BigInt(number.value);
     }catch{
-        result.innerText="整数を入力してください";
-        result.style.color="red";
+        result.innerHTML='整数を入力してください';
+        result.style.color='red';
         return;
     }
     if(isPrime(ipt)){
-        result.innerText=ipt.toString()+"はほぼ間違いなく素数です";
-	result.style.color="black";
+        result.innerHTML=ipt.toString()+'はほぼ間違いなく素数です';
+	result.style.color='black';
     }else{
-        result.innerText=ipt.toString()+"は素数ではありません";
-	result.style.color="black";
+        result.innerHTML=ipt.toString()+'は素数ではありません';
+        if(ipt==57n){
+   result.innerHTML+='<br><span style="color: red;">※57は実際には素数ですが、Miller-Rabin法では素数でないと判定されます。<br>詳しくは<a href="https://ja.ansaikuropedia.org/wiki/素数\">こちら</a>を参照してください。</span>'
+        }
+	result.style.color='black';
     }
 }
 let number=document.getElementById('number');
