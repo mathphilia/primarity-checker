@@ -1,23 +1,23 @@
 @charset "UTF-8";
 
 html{
-    font-family:"Yu Mincho","Hiragino Mincho Pro",serif;
+    font-family: "Yu Mincho", "Hiragino Mincho Pro", serif;
 }
 
 bold{
-    font-family:"MS serif";
-    font-weight:bold;
+    font-family: "MS serif";
+    font-weight: bold;
 }
 
 .form{
-    font-family:"HG行書体",serif;
-    font-size:20px;
+    font-family: "HG行書体", serif;
+    font-size: 20px;
 }
 
 .submit{
-    border-top:2px solid gray;
-    border-radius:3px;
-    font-family:"MS serif";
-    font-size:16px;
-    font-weight:bold;
+    border-top: 2px solid gray;
+    border-radius: 3px;
+    font-family: "MS serif";
+    font-size: 16px;
+    font-weight: bold;
 }
